@@ -15,6 +15,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"MS-CEINTL.vscode-language-pack-zh-hans",
 		"dbaeumer.vscode-eslint",
 		"EditorConfig.EditorConfig",
 		"octref.vetur",
