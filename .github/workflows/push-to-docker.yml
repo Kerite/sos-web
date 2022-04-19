@@ -15,7 +15,7 @@ jobs:
       - uses: action/checkout@v2
 
       - name: Build Image
-        run: docker build . -- tag $IMAGE_NAME
+        run: docker build . -- tag $IMAGE_NAME --file Dockerfile
 
       - name: Log in to docker hub
         run: echo "{{ secrets.ACCESS_TOKEN }}" | docker login -u keriteal --password-stdin
