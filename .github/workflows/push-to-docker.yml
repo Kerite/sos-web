@@ -7,13 +7,13 @@ on:
     branches: [ master ]
 
 env:
-  IMAGE_NAME:
+  IMAGE_NAME: sos-web
 
 jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Build Image
         run: docker build . -- tag $IMAGE_NAME --file Dockerfile
