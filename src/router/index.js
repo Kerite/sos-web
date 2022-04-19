@@ -16,6 +16,17 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/404",
+    name: "404",
+    title: "页面不见了",
+    component: () =>
+      import(/* webpackChunkName: "404" */ "@/views/NotFound.vue"),
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/404",
+  },
 ];
 
 const router = createRouter({
