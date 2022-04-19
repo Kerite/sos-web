@@ -11,7 +11,12 @@
 	},
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		"files.eol": "\n",
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true,
+		"editor.formatOnSave": true
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
